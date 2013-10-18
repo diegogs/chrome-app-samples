@@ -75,9 +75,28 @@ onload = function() {
         tv.classList.add('broken');
       });
 
-  document.getElementById('position-input').onchange = function() {
+  document.getElementById('servo-1').onchange = function() {
     setPosition(parseInt(this.value, 10));
+    document.getElementById('value-servo-1').innerHTML = this.value;
   };
+
+    document.getElementById('servo-2').onchange = function() {
+    setPosition(parseInt(this.value, 10));
+    document.getElementById('value-servo-2').innerHTML = this.value;
+
+  };
+
+    document.getElementById('servo-3').onchange = function() {
+    setPosition(parseInt(this.value, 10));
+    document.getElementById('value-servo-3').innerHTML = this.value;
+  };
+
+    document.getElementById('servo-4').onchange = function() {
+    setPosition(parseInt(this.value, 10));
+    document.getElementById('value-servo-4').innerHTML = this.value;
+  };
+
+   
 
   chrome.serial.getPorts(function(ports) {
     buildPortPicker(ports)

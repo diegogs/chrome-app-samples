@@ -17,16 +17,40 @@
     </label>
 
     <label>
-      Input:
-      <input id="position-input" type="range" min="0" max="9" value="0">
+      Head rotation:
+      <input id="servo-1" type="range" min="0.1" max="0.9" value="0" step="0.05">
+      <div id="value-servo-1">
+        0.1
+      </div>
     </label>
 
-    <div id="image"></div>
-  </div>
+     <label>
+      Head inclination:
+      <input id="servo-2" type="range" min="0.1" max="0.9" value="0" step="0.05">
+      <div id="value-servo-2">
+        0.1
+      </div>
+    </label>
 
-  <div id="tv" class="off">
-    <video id="camera-output" width="640" height="480" autoplay></video>
-    <img src="technical-difficulties.png" width="640" height="480" alt="Please stand by">
+    <label>
+      Eyelids:
+      <input id="servo-3" type="range" min="0.1" max="0.9" value="0" step="0.05">
+      <div id="value-servo-3">
+        0.1
+      </div>
+    </label>
+
+   <label>
+      Eyebrows:
+      <input id="servo-4" type="range" min="0.1" max="0.9" value="0" step="0.05">
+      <div id="value-servo-4">
+        0.1
+      </div>
+    </label>
+
+
+
+    <div id="image"></div>
   </div>
 
 </body>
